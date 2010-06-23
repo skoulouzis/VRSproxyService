@@ -1,0 +1,19 @@
+<deployment xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+		
+	<service name="ProxyService" provider="java:RPC" streaming="on">
+		<parameter name="className" value="proxyWS.impl.ProxyService"/>
+		<parameter name="allowedMethods" value="*"/> 
+	</service>
+
+	<service name="SimpleService" provider="java:RPC" streaming="on">
+		<parameter name="className" value="proxyWS.examples.SimpleService"/>
+		<parameter name="allowedMethods" value="*"/>
+	</service>
+	
+	<service name="ProducingService" provider="java:RPC" streaming="on">
+		<parameter name="className" value="proxyWS.examples.ProducingService"/>
+		<parameter name="allowedMethods" value="*"/>
+	</service>
+
+</deployment>

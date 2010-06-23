@@ -1,0 +1,5 @@
+
+
+manager.port=7080
+ws.path=/webapps/axis1.4/WEB-INF/
+ws.services=/axis1.4/services/
